@@ -1,0 +1,24 @@
+/* Add this to your stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+.active {
+    background-color: blueviolet; /* Add your desired background color here */
+    color: #fff; /* Add your desired text color here */
+  }
+  .mainactive{
+    background-color: lightsalmon;
+    color: aquamarine;
+  }
+  /* .name {
+    font-family: "Courgette", cursive;
+    font-weight: 600;
+    font-style: normal;
+  } */
+ .name{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
