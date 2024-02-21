@@ -5,6 +5,7 @@ const MainPage = () => {
     return (
         <div>
             <Navbar></Navbar>
+            hello devloper hi iam want to new commit 
         </div>
     );
 };
