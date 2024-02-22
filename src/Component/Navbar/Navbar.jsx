@@ -8,7 +8,7 @@ const links =
 
     smooth={true}
     spy={true}
-    offset={-100} activeClass="mainactive"
+    offset={-100} activeClass=""
     className="block "
 >
     Home
@@ -19,7 +19,7 @@ const links =
 
         smooth={true}
         spy={true}
-        offset={-100} activeClass="mainactive"
+        offset={-100} activeClass=""
         className="block "
     >
         About
@@ -29,7 +29,7 @@ const links =
 
     smooth={true}
     spy={true}
-    offset={-100} activeClass="mainactive"
+    offset={-100} activeClass=""
     className="block "
 >
     Contact
@@ -38,7 +38,7 @@ const links =
 
     smooth={true}
     spy={true}
-    offset={-100} activeClass="mainactive"
+    offset={-100} activeClass=""
     className="block "
 >
     Project
