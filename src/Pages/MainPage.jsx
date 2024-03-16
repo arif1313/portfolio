@@ -7,7 +7,7 @@ import Projects from "../Component/Projects/Projects";
 
 const MainPage = () => {
     return (
-        <div className="bg-white">
+        <div className="">
             <Navbar></Navbar>
             <Home></Home>
             <About></About>

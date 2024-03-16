@@ -8,11 +8,11 @@ const TypeAnimate = () => {
     preRenderFirstString={true}
     sequence={[
       500,
-      'I am a  Student of CSE', // initially rendered starting point
+      'Student of CSE', // initially rendered starting point
       1000,
-      'I am a Marn-Stak Devloper',
+      'Marn-Stak Devloper',
       1000,
-      'I am a softewer devloper',
+      'Softewer devloper',
       500,
       
     ]}
