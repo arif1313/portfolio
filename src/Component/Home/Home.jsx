@@ -1,44 +1,39 @@
 import TypeAnimate from "../TypeAnimate/TypeAnimate";
-import '../Home/clip.css'
-import '../Home/clip2.css'
+import '../Home/clip.css';
+
 import pic from '../../../public/mypic.jpg';
 import Navbar from "../Navbar/Navbar";
-import cv from '../../../public/resume.pdf'
+import cv from '../../../public/resume.pdf';
 
 const Home = () => {
     return (
-        <div className="min-h-screen  bg-cover relative" id="home" style={{
+        <div className="min-h-screen bg-cover relative" id="home" style={{
             backgroundImage: `url(${pic})`,
-            backgroundSize: 'cover', // Cover the entire page
-            backgroundPosition: 'center', // Center the background image
-            backgroundRepeat: 'no-repeat', // Do not repeat the image
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
         }}>
 
-            <Navbar></Navbar>
+            <Navbar />
 
+            <div className="bg-[#FEFAF3] h-full w-4/5 flex absolute items-center top-0 justify-start clip">
 
-            {/* <div className=" w-1/3 flex absolute justify-center items-center  -bottom-44 left-96">
-                    <div className=" h-96 w-96 bottom-0 border-8 bg-[#D8DBCB] border-[#D8DBCB]  rounded-full overflow-hidden ">
-                       
-                    </div>
+                <div className="p-5">
+                    <h2 className="text-2xl font-bold text-black">Hello, I am ...</h2>
+                    <h1 className="text-5xl font-bold mt-5">
+                        <span className="text-[#F59E0B]">MD Arif Hossen</span>
+                    </h1>
+                    <h2 className="mt-5 text-black font-bold">
+                        <TypeAnimate />
+                    </h2>
+                    <div className="">
+                    <a href={cv} download='Md Arif resume' className="btn bg-[#FDF1D9] text-[#F59E0B] border-none hover:text-white py-2 px-4 rounded-md hover:bg-[#F59E0B]">
+                        Download CV
+                    </a>
+                </div>
+                </div>
 
-                </div> */}
-          
-                <div className="bg-[#D8DBCB] h-full w-4/5 flex absolute  items-center top-0 justify-start clip">
-
-                    <div className="p-5 ">
-
-                        <h2 className="text-2xl font-bold text-black ">Hello I am .....</h2>
-                        <h1 className="text-5xl font-bold mt-5"><span className="text-[#55b1fb]">MD Arif hossen</span> </h1>
-                        <h2 className="mt-5 text-black font-bold"><TypeAnimate></TypeAnimate></h2>
-
-                    </div>
-                    <div className="navbar-end">
-                        <a href={cv} download='Md Arif resume' className="btn">Download cv</a>
-                    </div>
-                   
-              
-
+                
 
             </div>
         </div>
@@ -46,4 +41,3 @@ const Home = () => {
 };
 
 export default Home;
-// todo: color and design photo and butto text 
