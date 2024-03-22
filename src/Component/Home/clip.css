@@ -1,0 +1,5 @@
+.clip{
+    content: '';
+    
+    clip-path: polygon(0 0, 42% 0, 71% 100%, 0% 100%);
+}
