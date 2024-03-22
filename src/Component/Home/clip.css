@@ -1,5 +1,5 @@
 .clip{
     content: '';
     
-    clip-path: polygon(0 0, 42% 0, 71% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 82% 0, 58% 51%, 78% 100%, 0% 100%);
 }
