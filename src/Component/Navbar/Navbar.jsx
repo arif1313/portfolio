@@ -1,10 +1,9 @@
 import { Link } from "react-scroll";
 import './nav.css';
-import cv from '../../../public/resume.pdf'
 // import cv from '../../public/resume.pdf'
 const links = 
     <>
-    <li> <Link to="home"
+    <li> <Link to="home2"
 
     smooth={true}
     spy={true}
@@ -48,7 +47,7 @@ const links =
 
 const Navbar = () => {
     return (
-        <div className="navbar absolute z-30 text-black  name">
+        <div className="navbar  z-30 text-black font-bold name">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -65,7 +64,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={cv} download='Md Arif resume' className="btn">Download cv</a>
+                
             </div>
         </div>
 

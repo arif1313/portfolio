@@ -1,6 +1,7 @@
 import About from "../Component/About/About";
 import Contact from "../Component/Contact/Contact";
-import Home from "../Component/Home/Home";
+import Home2 from "../Component/Home/Home2";
+
 
 import Projects from "../Component/Projects/Projects";
 
@@ -9,11 +10,11 @@ const MainPage = () => {
     return (
         <div className="">
            
-            <Home></Home>
+        <Home2></Home2>
             <About></About>
             <Projects></Projects>
             <Contact></Contact>
-            hello devloper hi iam want to new commit 
+            i am fro
         </div>
     );
 };
