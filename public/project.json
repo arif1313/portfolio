@@ -1,0 +1,38 @@
+{
+    "projects": [
+      {
+        "name": "Project Name 1",
+        "description": "Brief description of what the project does and what technologies were used.",
+        "features": [
+          "Feature 1",
+          "Feature 2",
+          "Feature 3"
+        ],
+        "technologies_used": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Node.js"
+        ],
+        "github_url": "https://github.com/yourUsername/projectName1",
+        "live_demo_url": "http://example.com/project1LiveDemo"
+      },
+      {
+        "name": "Project Name 2",
+        "description": "Brief description of what the project does and what technologies were used.",
+        "features": [
+          "Feature 1",
+          "Feature 2",
+          "Feature 3"
+        ],
+        "technologies_used": [
+          "React",
+          "Redux",
+          "Firebase"
+        ],
+        "github_url": "https://github.com/yourUsername/projectName2",
+        "live_demo_url": "http://example.com/project2LiveDemo"
+      }
+    ]
+  }
+  

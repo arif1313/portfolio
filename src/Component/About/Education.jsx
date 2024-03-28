@@ -33,7 +33,7 @@ const Education = () => {
         freeMode={true}
         pagination={{
           clickable: true,
-          type: 'progressbar',
+          
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
