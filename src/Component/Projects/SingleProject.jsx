@@ -2,6 +2,7 @@
 
 const SingleProject = ({ project }) => {
     const { name, description, features, technologies_used, github_url, live_demo_url } = project;
+    console.log(features)
 
     return (
         <div className="card card-compact bg-TextWhite shadow-xl">
