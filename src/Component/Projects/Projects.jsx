@@ -1,8 +1,11 @@
 
 const Projects = () => {
+ 
     return (
-        <div className="min-h-screen" id="project">
-            Project section
+        <div className="min-h-screen bg-secondBg" id="project">
+           <div>
+
+           </div>
         </div>
     );
 };

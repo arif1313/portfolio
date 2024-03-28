@@ -1,0 +1,50 @@
+{
+    "education": [
+      {
+        "level": "Bachelor's Degree",
+        "institution": "Sonargon University ",
+        "location": "Dhaka, Bangladesh",
+        "startYear": "2020",
+        "endYear": "2025",
+        "group":"CSE",
+        "major": "N/A", 
+        "grade":"pending",
+        "achievements": [
+          "Graduated with honors",
+          "Thesis on 'Your Thesis Topic'",
+          "Achievement 3"
+        ]
+      },
+      {
+        "level": "HSC",
+        "institution": "Helal Udding College",
+        "location": "Barishal, Bangladesh",
+        "startYear": "2016",
+        "endYear": "2019",
+        "group":"Science",
+        "major": "N/A", 
+        "grade":"4.56",
+        "achievements": [
+          "Achievement 1",
+          "Achievement 2"
+        ]
+      },
+      {
+        "level": "SSC",
+        "institution": "Hazi Panchom Ali High school",
+        "location": "Barishal, Bangladesh",
+        "startYear": "2014",
+        "endYear": "2016",
+        "group":"Science",
+        "major": "N/A", 
+        "grade":"4.81",
+        "achievements": [
+          "Achievement 1",
+          "Achievement 2"
+        ]
+      }
+     
+      
+    ]
+  }
+  

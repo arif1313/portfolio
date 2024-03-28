@@ -3,7 +3,7 @@
 const Title = ({title}) => {
     return (
         <div>
-            <h1 className="text-black font-semibold text-3xl text-center p-2 border-2 ">{title}</h1>
+            <h1 className="text-black font-semibold text-3xl text-center p-2 ">{title}</h1>
         </div>
     );
 };
