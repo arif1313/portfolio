@@ -5,7 +5,7 @@ import Title from "../Title/Title";
 import Education from "./Education";
 
 import gif from '../../../public/mygOne.gif';
-import gif2 from '../../../public/mygTwo.gif';
+
 import InfoHeading from "../InfoHeading/InfoHeading";
 import EducationPic from "./EducationPic";
 
@@ -91,15 +91,12 @@ const About = () => {
 
             </div>
             <div className="grid grid-cols-3 py-10 px-10 gap-10">
-                <EducationPic></EducationPic>
+                {/* <EducationPic></EducationPic> */}
                 <Education></Education>
             </div>
-            <div className="flex justify-between mt-16 ">
-                <div className="w-1/2">
-                    <img src={gif2} alt="" />
-                </div>
-
-                <div className=" w-1/2 px-5 grid grid-cols-2">
+            <div className="mt-16 ">
+               
+                <div className="  px-10 grid grid-cols-3">
                     <InfoHeading Role="Nationality : " Option="Bangladeshi"></InfoHeading>
 
                     <InfoHeading Role="Date of Birth : " Option=" 05 september 2000"></InfoHeading>

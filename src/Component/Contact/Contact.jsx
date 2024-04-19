@@ -2,8 +2,8 @@
 
 const Contact = () => {
     return (
-        <div className="min-h-screen" id="contact">
-            this is contact section 
+        <div className="min-h-screen bg-mainBg" id="contact">
+           
         </div>
     );
 };

@@ -22,55 +22,55 @@ const Education = () => {
     }, []); // Empty dependency array means this effect runs once on mount
     // console.log(Object.keys(educations[0]).join(','))
     return (
-       
-         
-
-            <div className='col-span-2 '>
-                 <Swiper
-                  
-        slidesPerView={2}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-          
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
-                    {educations.map((edu, index) => (
-                        // Make sure to provide a unique key for each child
-                        <SwiperSlide key={index}>
 
 
-                            <div className='flex items-center shadow-md border-2 border-hoverButton rounded-md p-2'>
 
-                                <div>
-                                    <h2 className='rotate-90 text-xl font-bold text-textYallow'>{edu.startYear}-{edu.endYear}</h2>
+        <div className='col-span-3 '>
+            <Swiper
+
+                slidesPerView={3}
+                spaceBetween={30}
+                freeMode={true}
+                pagination={{
+                    clickable: true,
+
+                }}
+                modules={[FreeMode, Pagination]}
+                className="mySwiper"
+            >
+                {educations.map((edu, index) => (
+                    // Make sure to provide a unique key for each child
+                    <SwiperSlide key={index}>
+
+
+                        <div className='flex items-center shadow-md border-2 border-hoverButton rounded-md p-2'>
+
+                            <div>
+                                <h2 className='rotate-90 text-xl font-bold text-textYallow'>{edu.startYear}-{edu.endYear}</h2>
+                            </div>
+                            <div className=''>
+                                <div className='flex gap-5 mb-5'>
+                                    <FaUserGraduate className='text-3xl'></FaUserGraduate>
+                                    <h1 className='text-2xl text-center font-bold text-textYallow '> {edu.level}</h1>
                                 </div>
-                                <div className=''>
-                                    <div className='flex gap-5 mb-5'>
-                                        <FaUserGraduate className='text-3xl'></FaUserGraduate>
-                                        <h1 className='text-2xl text-center font-bold text-textYallow '> {edu.level}</h1>
-                                    </div>
-                                    <h3 className='mb-2'><span className='font-bold'>From : </span>{edu.institution}</h3>
-                                    <h3 className='mb-2'>{edu.location}</h3>
-                                    <h3 className='mb-2'><span className='font-bold'>Subject : </span>{edu.group}</h3>
-                                    <h3><span className='font-bold'>Grade : </span>{edu.grade}</h3>
-
-
-                                </div>
+                                <h3 className='mb-2'><span className='font-bold'>From : </span>{edu.institution}</h3>
+                                <h3 className='mb-2'>{edu.location}</h3>
+                                <h3 className='mb-2'><span className='font-bold'>Subject : </span>{edu.group}</h3>
+                                <h3><span className='font-bold'>Grade : </span>{edu.grade}</h3>
 
 
                             </div>
 
 
+                        </div>
 
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-      
+
+
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
+
 
     );
 };
