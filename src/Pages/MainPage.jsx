@@ -3,7 +3,7 @@ import Service from "../Component/About/Service";
 import Contact from "../Component/Contact/Contact";
 // import Home from "../Component/Home/Home";
 import Home2 from "../Component/Home/Home2";
-
+import '../App.css'
 
 import Projects from "../Component/Projects/Projects";
 

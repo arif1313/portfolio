@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 } */
+*{user-select: none; /* Prevents text selection */
+-webkit-user-select: none; /* For Safari */
+-moz-user-select: none; /* For Firefox */
+-ms-user-select: none; /* For older IE versions */
+}

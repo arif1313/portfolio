@@ -12,7 +12,7 @@ const Home2 = () => {
             <Navbar />
 
 
-            <div className="  lg:flex h-screen justify-between items-center ">
+            <div className="  lg:flex  h-screen justify-between items-center ">
                 <div className="p-5 w-1/2 flex justify-center text-center">
                     <div>
                         <h2 className="text-xl lg:text-2xl font-bold text-TextWhite ">Hello, I am
