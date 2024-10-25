@@ -17,7 +17,7 @@ const TypeAnimate = () => {
       
     ]}
     speed={50}
-    style={{ fontSize: '2em' }}
+    style={{ fontSize: '2em',color:"white" }}
     repeat={Infinity}
     
   />
