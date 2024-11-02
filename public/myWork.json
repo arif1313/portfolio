@@ -1,0 +1,55 @@
+{"works": [
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        "title": "JavaScript",
+        "description": "JavaScript (JS) is essential for modern web development, providing dynamic behavior and interactive features for web applications."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        "title": "Node.js",
+        "description": "Node.js is a powerful runtime that allows JavaScript to be executed server-side, enabling scalable and efficient backend solutions."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+        "title": "React",
+        "description": "React is a popular front-end library for building user interfaces, known for its component-based architecture and fast rendering."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+        "title": "MongoDB",
+        "description": "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents, making it ideal for scalable and fast data retrieval."
+    },
+    {
+        "icon": "https://cdn.worldvectorlogo.com/logos/express-109.svg",
+        "title": "Express.js",
+        "description": "Express.js is a minimal and flexible Node.js web application framework that provides robust features for web and mobile applications."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+        "title": "TypeScript",
+        "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript, enhancing code quality and development productivity."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png",
+        "title": "Redux",
+        "description": "Redux is a state management tool commonly used with React for managing and centralizing application state."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+        "title": "Next.js",
+        "description": "Next.js is a React framework for building server-side rendered and static web applications, providing improved SEO and performance."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+        "title": "HTML",
+        "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages."
+    },
+    {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+        "title": "CSS",
+        "description": "CSS (Cascading Style Sheets) is used for styling and designing the layout of web pages, enhancing the visual presentation."
+    }
+]
+
+
+}

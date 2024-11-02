@@ -1,9 +1,16 @@
 
 
-const Title = ({title}) => {
+const Title = ({ headingTitle }) => {
     return (
         <div>
-            <h1 className="text-[#28E98C] font-semibold text-3xl text-center p-2 ">{title}</h1>
+            <div className="flex gap-2">
+                <div className="bg-[#28E98C]  w-1">
+
+                </div>
+                <div>
+                    <h1 className="text-5xl font-bold text-neutral-100">{headingTitle}</h1>
+                </div>
+            </div>
         </div>
     );
 };

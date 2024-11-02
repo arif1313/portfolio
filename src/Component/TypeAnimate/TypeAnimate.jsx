@@ -11,9 +11,7 @@ const TypeAnimate = () => {
           'Student of CSE', // initially rendered starting point
           1000,
           'Marn-Stak Devloper',
-          1000,
-          'Softewer devloper',
-          500,
+          1000
 
         ]}
         speed={50}
