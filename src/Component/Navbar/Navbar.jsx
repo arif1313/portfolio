@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import './nav.css';
+// import './nav.css';
 // import cv from '../../public/resume.pdf'
 const links =
     <>

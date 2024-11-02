@@ -2,18 +2,14 @@ import TypeAnimate from "../TypeAnimate/TypeAnimate";
 import '../Home/clip.css';
 
 import pic from '../../../public/mypic5out.png';
-import Navbar from "../Navbar/Navbar";
+
 import cv from '../../../public/resume.pdf';
 
 const Home2 = () => {
     return (
-        <div className="min-h-screen" id="home2" >
-
-            <Navbar />
-
-
-            <div className="  lg:flex  h-screen justify-between items-center ">
-                <div className="p-5 w-1/2 flex justify-center text-center">
+        <div className="" >
+            <div className="h-screen justify-between items-center ">
+                <div className="p-5 flex justify-center text-center">
                     <div>
                         <h2 className="text-xl lg:text-2xl font-bold text-TextWhite ">Hello, I am
 

@@ -6,13 +6,13 @@ import { VscTerminalTmux } from "react-icons/vsc";
 const Service = () => {
     // const[open, setOpen] = useState(false);
     return (
-        <div className="min-h-screen p-10 relative " id="about">
+        <div className="min-h-screen p-10 relative " id="service">
             <div className="flex items-center gap-2 ">
                 <div className=" h-1 rounded-xl w-8 bg-[#28E98C] "></div>
                 <div className="py-5"><h6 className="text-neutral-100">Services </h6></div>
             </div>
             <h1 className=" font-semibold  text-neutral-100 text-3xl  ">My
-                <span className="text-[#28E98C]">Services</span></h1>
+                <span className="text-[#28E98C]"> Services</span></h1>
 
             <div className="p-16 flex gap-10">
 
