@@ -7,10 +7,12 @@ const TypeAnimate = () => {
       <TypeAnimation
         preRenderFirstString={true}
         sequence={[
-          500,
-          'Student of CSE', // initially rendered starting point
-          1000,
+          300,
+          'CSE Graduate', // initially rendered starting point
+          600,
           'Marn-Stak Devloper',
+          1000,
+          'App Developer',
           1000
 
         ]}

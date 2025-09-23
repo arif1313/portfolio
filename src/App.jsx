@@ -1,31 +1,19 @@
 // src/App.js
-
 import { Outlet } from "react-router-dom";
-
-import Header from "./Component/Layout/Header";
-
 import Sidebar from "./Component/Layout/Sidebar";
-
-
 
 const App = () => {
   return (
-    <div className="flex  h-screen">
+    <div className="flex h-screen w-screen">
+      {/* Sidebar fixed - 1/4 width */}
+      <div className="fixed left-0 top-0 h-full w-1/4">
+        <Sidebar />
+      </div>
 
-      <div className="">
+      {/* Main content takes remaining 3/4 */}
+      <div className="ml-[25%] w-3/4 h-full overflow-y-auto">
         <Outlet />
       </div>
-      {/* 
-      <div className="overflow-y-auto"> 
-        <Header />
-        <main className="p-4">
-         
-
-
-        </main>
-
-      </div> */}
-
     </div>
   );
 };

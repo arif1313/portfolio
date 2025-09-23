@@ -9,7 +9,7 @@ import {
 
 import App from './App.jsx';
 import About from './Component/About/About.jsx';
-import Home2 from './Component/Home/Home2.jsx';
+
 import Service from './Component/About/Service.jsx';
 import Home4 from './Component/Home/Home4.jsx';
 

@@ -11,11 +11,8 @@ import Projects from "../Projects/Projects";
 const Home4 = () => {
     return (
 
-        <div className="pl-96 py-32 pr-5 bg-[#292929] ">
+        <div className=" pl-4  bg-[#292929] ">
             <div className="flex  justify-around ">
-                <div>
-                    <Sidebar />
-                </div>
                 <div className="xl:flex  justify-center items-center">
                     <div className=" flex justify-center  ">
                         <div>
@@ -61,7 +58,11 @@ const Home4 = () => {
             </div>
             <Stat></Stat>
             <hr />
-            <WhatDo headingTitle={'What I do '} headingDescrip={`I have more than 1 years experience building Website for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my <span className="text-[#28E98C]">online resume</span> and <span className="text-[#28E98C]">project portfolio</span>.`}></WhatDo>
+            <WhatDo headingTitle={'What I do '} headingDescrip={`I have more than 1 years experience building Website for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my 
+                `}
+                >
+                    <span className="text-[#28E98C]">online resume</span> and <span className="text-[#28E98C]">project portfolio</span>.
+                </WhatDo>
             <Woks></Woks>
             <Projects></Projects>
         </div>
