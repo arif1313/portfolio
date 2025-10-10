@@ -1,11 +1,8 @@
-
-
 const InfoHeading = ({ Role, Option }) => {
     return (
-        <div className="mb-5 grid grid-cols-[1fr_auto_1fr]">
-            <div><h1 className="font-bold text-[#28E98C] text-xl">{Role}</h1></div>
-            <div className="px-5"><h3 className="font-bold">:</h3></div>
-            <div><h3 className="font-bold text-xl">{Option}</h3></div>
+        <div className="flex justify-between items-center border-b border-gray-700 pb-2">
+            <h1 className="font-semibold text-lg text-[#28E98C]">{Role}</h1>
+            <span className="text-neutral-200 font-medium">{Option}</span>
         </div>
     );
 };

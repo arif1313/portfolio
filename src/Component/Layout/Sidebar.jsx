@@ -1,10 +1,8 @@
 // src/components/Sidebar.js
 
-import { CgMail } from 'react-icons/cg';
-import mypic from '../../../public/mypic5out.png';
+
 import mypicshort from '../../../public/mypic45.png';
-import { FaHome, FaUser, FaToolbox, FaProjectDiagram, FaEnvelope, FaWhatsapp, FaFacebookMessenger, FaLinkedin, FaMailBulk, FaFacebook, FaInstagram } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaHome, FaUser, FaToolbox, FaProjectDiagram, FaEnvelope, FaLinkedin, FaFacebook, FaGithub, } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
 import { NavLink } from "react-router-dom";
 
@@ -36,16 +34,46 @@ const Sidebar = () => {
         {/* Socials */}
         <div className="flex gap-5 py-3">
           <div className="border p-1 rounded-full">
-            <FaFacebook className="text-[#54B689]" />
+            <a
+              href="https://www.facebook.com/mdarifhossen.sagor/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="text-[#54B689]" />
+            </a>
+
           </div>
           <div className="border p-1 rounded-full">
-            <FaX className="text-[#54B689]" />
+
+            <a
+              href="https://www.facebook.com/mdarifhossen.sagor/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaX className="text-[#54B689]" />
+            </a>
+
           </div>
           <div className="border p-1 rounded-full">
-            <FaInstagram className="text-[#54B689]" />
+            <a
+              href="https://github.com/arif1313?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-[#54B689]" />
+            </a>
+
           </div>
           <div className="border p-1 rounded-full">
-            <FaLinkedin className="text-[#54B689]" />
+            <a
+              href="https://www.linkedin.com/in/arifhossen13/"
+
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-[#54B689]" />
+            </a>
+
           </div>
         </div>
       </div>
@@ -69,7 +97,7 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </div >
   );
 };
 

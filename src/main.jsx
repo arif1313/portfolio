@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './index.css' // Ensure this file has the CSS for flex layouts, overflow control, etc.
+import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +12,8 @@ import About from './Component/About/About.jsx';
 
 import Service from './Component/About/Service.jsx';
 import Home4 from './Component/Home/Home4.jsx';
+import Projects from './Component/Projects/Projects.jsx';
+import Contact from './Component/Contact/Contact.jsx';
 
 
 
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Service />
+      },
+      {
+        path: 'projects',
+        element: <Projects />
+      },
+      {
+        path: 'contact',
+        element: <Contact />
       }
     ]
   }

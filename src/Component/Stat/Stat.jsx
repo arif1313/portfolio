@@ -3,7 +3,7 @@
 const Stat = () => {
     return (
         <div className="py-10">
-            <div className="stats shadow bg-[rgb(41,41,41)] pb-0 mb-0">
+            <div className="stats shadow bg-[rgb(41,41,41)] pb-0 mb-0 ">
                 <div className="stat">
 
 

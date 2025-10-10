@@ -1,58 +1,160 @@
-
+import { useState } from "react";
 import { CgWebsite } from "react-icons/cg";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaServer, FaCode } from "react-icons/fa";
 import { SiBmcsoftware } from "react-icons/si";
 import { VscTerminalTmux } from "react-icons/vsc";
+import { DiPython } from "react-icons/di";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Service = () => {
-    // const[open, setOpen] = useState(false);
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const services = [
+        {
+            title: "Web Development",
+            icon: <CgWebsite className="text-7xl text-[#28E98C]" />,
+            shortDesc: "MERN Stack Website Development",
+            fullDesc: (
+                <>
+                    I build modern and responsive websites using <b>React, Tailwind CSS, HTML, CSS, JavaScript, Redux</b>.
+                    Focused on clean design, high performance, and responsive UI.
+                </>
+            ),
+        },
+        {
+            title: "App Development",
+            icon: <SiBmcsoftware className="text-7xl text-[#28E98C]" />,
+            shortDesc: "Full Stack Application Development",
+            fullDesc: (
+                <>
+                    Experienced in building scalable applications using <b>Node.js, Express, MongoDB, TypeScript, Firebase, Multer, Docker</b>.
+                    I ensure secure and efficient backend systems with smooth API integration.
+                </>
+            ),
+        },
+        {
+            title: "UI / UX Design",
+            icon: <VscTerminalTmux className="text-7xl text-[#28E98C]" />,
+            shortDesc: "Responsive & User-friendly Design",
+            fullDesc: (
+                <>
+                    Skilled in <b>Figma, Adobe XD, Sketch, and Design Thinking</b>.
+                    Creating intuitive and engaging interfaces that enhance user experience.
+                </>
+            ),
+        },
+        {
+            title: "Frontend Development",
+            icon: <FaCode className="text-7xl text-[#28E98C]" />,
+            shortDesc: "Modern, responsive & interactive UI",
+            fullDesc: (
+                <>
+                    Focused on building pixel-perfect frontends with <b>React, Tailwind, HTML, CSS, JavaScript, Redux</b>.
+                    Optimized for performance and accessibility.
+                </>
+            ),
+        },
+        {
+            title: "Backend Development",
+            icon: <FaServer className="text-7xl text-[#28E98C]" />,
+            shortDesc: "APIs, Databases & Secure Systems",
+            fullDesc: (
+                <>
+                    Expertise in <b>Node.js, Express, MongoDB, TypeScript, Firebase</b>.
+                    Implementing robust server-side logic, API endpoints, and secure database management.
+                </>
+            ),
+        },
+        {
+            title: "Programming Languages",
+            icon: <DiPython className="text-7xl text-[#28E98C]" />,
+            shortDesc: "C, C++, Python, Java",
+            fullDesc: (
+                <>
+                    Problem-solving and algorithm development using <b>C, C++, Python, Java</b>.
+                    Competent in competitive programming platforms like <b>LeetCode, CodeChef, URI Online Judge</b>.
+                </>
+            ),
+        },
+    ];
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+    };
+
+    const contentVariants = {
+        collapsed: { height: 0, opacity: 0 },
+        expanded: { height: "auto", opacity: 1 },
+    };
+
     return (
-        <div className="min-h-screen p-10 relative " id="service">
-            <div className="flex items-center gap-2 ">
-                <div className=" h-1 rounded-xl w-8 bg-[#28E98C] "></div>
-                <div className="py-5"><h6 className="text-neutral-100">Services </h6></div>
+        <div className="min-h-screen bg-[#292929] p-10" id="service">
+            {/* Heading */}
+            <div className="text-center md:text-left mb-12">
+                <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide text-white">
+                    My <span className="text-[#28E98C]">Services</span>
+                </h1>
+                <div className="flex justify-center md:justify-start">
+                    <div className="w-24 h-1 bg-[#28E98C] rounded-full animate-pulse"></div>
+                </div>
             </div>
-            <h1 className=" font-semibold  text-neutral-100 text-3xl  ">My
-                <span className="text-[#28E98C]"> Services</span></h1>
 
-            <div className="p-16 flex gap-10">
+            {/* Services grid */}
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                {services.map((service, index) => (
+                    <motion.div
+                        key={index}
+                        className="card bg-[#0f0f0f] shadow-lg p-6 rounded-2xl cursor-pointer"
+                        whileHover={{ scale: 1.05, boxShadow: "0 0 20px #28E98C" }}
+                        initial="hidden"
+                        animate="visible"
+                        variants={cardVariants}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                        <div className="flex flex-col items-center text-center gap-4">
+                            {service.icon}
+                            <h2 className="card-title text-xl text-white">{service.title}</h2>
 
+                            {/* Animated Expand/Collapse */}
+                            <AnimatePresence initial={false}>
+                                {openIndex === index ? (
+                                    <motion.div
+                                        key="content"
+                                        variants={contentVariants}
+                                        initial="collapsed"
+                                        animate="expanded"
+                                        exit="collapsed"
+                                        transition={{ duration: 0.5 }}
+                                        className="text-neutral-300 text-sm"
+                                    >
+                                        {service.fullDesc}
+                                    </motion.div>
+                                ) : (
+                                    <motion.p
+                                        key="short"
+                                        className="text-neutral-300 text-sm"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.3 }}
+                                    >
+                                        {service.shortDesc}
+                                    </motion.p>
+                                )}
+                            </AnimatePresence>
 
-                <div className="rounded-full  hover:text-[#28E98C] hover:bg-opacity-40  card bg-[#000000]  shadow-xl">
-                    <figure className="px-10 pt-10">
-                        <CgWebsite className="text-8xl  "></CgWebsite>
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Web Devlopment</h2>
-                        <p>Marn-Stak Website Devlopment  </p>
-                        <div className="card-actions">
-                            <button className="btn btn-sm bg-[#28E98C] bg-opacity-80 text-neutral-200 hover:bg-[#28E98C] hover:text-[#28E98C] hover:bg-opacity-40">Learn more <FaLongArrowAltRight></FaLongArrowAltRight></button>
+                            <button
+                                onClick={() =>
+                                    setOpenIndex(openIndex === index ? null : index)
+                                }
+                                className="btn btn-sm mt-2 bg-[#28E98C] bg-opacity-80 text-black font-semibold 
+                hover:bg-transparent hover:text-[#28E98C] border border-[#28E98C] flex items-center gap-2 transition-all duration-300"
+                            >
+                                {openIndex === index ? "Show less" : "Learn more"} <FaLongArrowAltRight />
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div className="rounded-full  hover:text-[#28E98C]   card bg-[#000000] hover:bg-opacity-40  shadow-xl">
-                    <figure className="px-10 pt-10">
-                        <SiBmcsoftware className="text-8xl  "></SiBmcsoftware>
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">App Devlopment</h2>
-                        <p>Full Stack Application Devlopment </p>
-                        <div className="card-actions">
-                            <button className="btn btn-sm bg-[#28E98C] bg-opacity-80 text-neutral-200 hover:bg-[#28E98C] hover:text-[#28E98C] hover:bg-opacity-40">Learn more <FaLongArrowAltRight></FaLongArrowAltRight></button>
-                        </div>
-                    </div>
-                </div>
-                <div className="rounded-full  hover:text-[#28E98C]   card bg-[#000000] hover:bg-opacity-40  shadow-xl">
-                    <figure className="px-10 pt-10">
-                        <VscTerminalTmux className="text-8xl  "></VscTerminalTmux>
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">UI/UX </h2>
-                        <p>Responsive Userfriendly Design </p>
-                        <div className="card-actions">
-                            <button className="btn btn-sm bg-[#28E98C] bg-opacity-80 text-neutral-200 hover:bg-[#28E98C] hover:text-[#28E98C] hover:bg-opacity-40">Learn more <FaLongArrowAltRight></FaLongArrowAltRight></button>
-                        </div>
-                    </div>
-                </div>
+                    </motion.div>
+                ))}
             </div>
         </div>
     );
