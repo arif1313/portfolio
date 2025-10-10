@@ -13,7 +13,7 @@ const SingleWorkDiv = ({ work }) => {
             <h2 className="text-xl lg:text-2xl font-bold text-white">{title}</h2>
 
             {/* Description */}
-            <p className="text-neutral-300 text-sm lg:text-base leading-relaxed">{description}</p>
+            <p className="text-neutral-300 text-sm lg:text-base leading-relaxed text-justify">{description}</p>
         </div>
     );
 };
