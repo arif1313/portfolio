@@ -18,7 +18,7 @@ const Projects = () => {
     const codingProjects = projects.filter(p => p.category === "coding");
 
     return (
-        <section id="projects" className="p-8 lg:p-16 bg-[#292929] min-h-screen">
+        <section className="p-8 lg:p-10 bg-[#292929] min-h-screen ">
             {/* Heading */}
             <div className=" mb-12">
                 <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide text-white">
@@ -75,7 +75,7 @@ const Projects = () => {
                             Cross-platform mobile apps built using React Native.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 z-4-">
                         {mobileProjects.map((project, idx) => (
                             <SingleProject project={project} key={idx} />
                         ))}

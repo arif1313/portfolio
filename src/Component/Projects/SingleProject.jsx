@@ -2,7 +2,7 @@ const SingleProject = ({ project }) => {
     const { name, description, features, technologies_used, github_url, live_demo_url, image } = project;
 
     return (
-        <div className="relative group bg-[#1E1E1E] rounded-2xl overflow-hidden shadow-lg hover:shadow-[#28E98C]/40 border border-gray-800 hover:border-[#28E98C] transition-all duration-500">
+        <div className="relative group bg-[#1E1E1E] rounded-2xl overflow-hidden shadow-lg hover:shadow-[#28E98C]/40 border border-gray-800 hover:border-[#28E98C] transition-all duration-500 z-10">
 
             {/* Image Section */}
             <div className="overflow-hidden h-52">

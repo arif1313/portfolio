@@ -89,7 +89,7 @@ const Service = () => {
     };
 
     return (
-        <div className="min-h-screen bg-[#292929] p-10" id="service">
+        <div className="min-h-screen bg-[#292929] p-10" >
             {/* Heading */}
             <div className="text-center md:text-left mb-12">
                 <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide text-white">
@@ -101,7 +101,7 @@ const Service = () => {
             </div>
 
             {/* Services grid */}
-            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 sm:z-0">
                 {services.map((service, index) => (
                     <motion.div
                         key={index}

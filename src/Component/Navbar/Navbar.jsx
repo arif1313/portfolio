@@ -1,6 +1,5 @@
 import { Link } from "react-scroll";
-// import './nav.css';
-// import cv from '../../public/resume.pdf'
+
 const links =
     <>
         <li> <Link to="home2"

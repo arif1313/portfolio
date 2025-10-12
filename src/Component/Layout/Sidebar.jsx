@@ -1,4 +1,4 @@
-// src/components/Sidebar.js
+
 
 
 import mypicshort from '../../../public/mypic45.png';

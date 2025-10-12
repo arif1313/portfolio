@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 const Contact = () => {
     const form = useRef();
@@ -28,7 +30,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="min-h-screen bg-[#292929] px-6 lg:px-20 py-16 text-white">
+        <section className="min-h-screen bg-[#292929] px-6 lg:px-10 py-16 text-white">
             {/* Heading */}
             <div className="text-center mb-12">
                 <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide">
@@ -72,7 +74,52 @@ const Contact = () => {
                             📱 WhatsApp
                         </a>
                     </div>
+                    <div className="flex justify-around py-10">
+                        <div className="border p-1 rounded-full">
+                            <a
+                                href="https://www.facebook.com/mdarifhossen.sagor"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaFacebook className="text-[#54B689] lg:text-3xl md:text-2xl sm:text-2xl" />
+                            </a>
+
+                        </div>
+                        <div className="border p-1 rounded-full">
+
+                            <a
+                                href="https://www.facebook.com/mdarifhossen.sagor/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaX className="text-[#54B689] lg:text-3xl md:text-2xl sm:text-2xl" />
+                            </a>
+
+                        </div>
+                        <div className="border p-1 rounded-full">
+                            <a
+                                href="https://github.com/arif1313?tab=repositories"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaGithub className="text-[#54B689] lg:text-3xl md:text-2xl sm:text-2xl" />
+                            </a>
+
+                        </div>
+                        <div className="border  p-1 rounded-full">
+                            <a
+                                href="https://www.linkedin.com/in/arifhossen13/"
+
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaLinkedin className="text-[#54B689] lg:text-3xl md:text-2xl sm:text-2xl" />
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
+
 
                 {/* Contact Form */}
                 <form
