@@ -48,7 +48,7 @@ const Sidebar2 = () => {
     return (
         <div>
             {/* Desktop Sidebar */}
-            <div className="hidden md:flex fixed top-0 left-0 h-full w-1/4 bg-gray-900 text-white flex flex-col p-6 z-50">
+            <div className="sm:hidden md:flex fixed top-0 left-0 h-full w-1/4 bg-gray-900 text-white lg:flex flex-col p-6 z-50">
 
                 {/* Profile Section */}
                 <div className="flex flex-col items-center p-4">
