@@ -30,9 +30,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="min-h-screen bg-[#292929] px-6 lg:px-10 py-16 text-white">
-            {/* Heading */}
-            <div className="text-center mb-12">
+        <section className="min-h-screen bg-[#07110D] px-6 lg:px-10 py-16 text-white mx-w-[1400px] mx-auto">
+          <div  className="">
+              {/* Heading */}
+            <div className="text-center mb-12 ">
                 <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide">
                     Get In <span className="text-[#28E98C]">Touch</span>
                 </h1>
@@ -168,6 +169,7 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+          </div>
         </section>
     );
 };

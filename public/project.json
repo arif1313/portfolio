@@ -11,6 +11,16 @@
       "category": "frontend"
     },
     {
+      "name": "Real Estate Website2",
+      "description": "A complete MERN stack Real Estate app React and Tailwind CSS",
+      "technologies_used": ["React", "Tailwind", "Framer Motion"],
+      "features": ["Responsive design", "Animated sections", "Dynamic projects"],
+      "github_url": "https://github.com/arif1313/Dream-Dwell",
+      "live_demo_url": "https://real-easted.web.app/",
+      "image": "/realState.jpeg",
+      "category": "frontend"
+    },
+    {
       "name": "Event Management Website",
       "description": "A complete MERN stack e-commerce app with cart ",
       "technologies_used": ["React", "Node.js", "Express", "MongoDB"],
