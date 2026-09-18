@@ -12,7 +12,7 @@ const WhatDo = ({ headingTitle, headingDescrip }) => {
         }
     };
     return (
-        <div className="py-10">
+        <div className="max-w-[1400px] mx-auto">
             <Title headingTitle={headingTitle} />
             <div className="py-10 pr-2 text-neutral-100">
                 <p>{headingDescrip}</p>

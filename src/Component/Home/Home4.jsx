@@ -6,7 +6,6 @@ import Stat from "../Stat/Stat";
 import Woks from "../WhatDo/Woks";
 
 const Home4 = () => {
-    // Smooth scroll handler
     const handleHireMeClick = () => {
         const contactSection = document.getElementById("contact");
         if (contactSection) {
@@ -15,34 +14,32 @@ const Home4 = () => {
     };
 
     return (
-        <div className="bg-[#292929] px-4 md:px-10 lg:px-10 py-10">
-
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
-
-                <div className="flex-1 text-center lg:text-left">
-                    <h2 className="text-xl lg:text-2xl font-bold text-white">
+        <div className=" w-full min-w-0 overflow-hidden  bg-[#07110d]/95 px-0 py-8 shadow-[0_20px_70px_rgba(0,0,0,0.45)] backdrop-blur-sm md:px-8 lg:px-10 lg:py-10">
+            <div className=" max-w-[1400px] mx-auto flex flex-col items-center justify-between gap-10 lg:flex-row">
+            <div className="min-w-0 max-w-full flex-1 text-center lg:text-left">
+                    <p className="mb-4 text-sm font-medium uppercase tracking-[0.32em] text-[#28e98c]">
                         Hello, I am
-                        <span className="block text-[#28E98C] text-2xl lg:text-4xl font-bold">
-                            MD Arif Hossen
+                    </p>
+                    <h2 className="text-3xl font-semibold text-[#eefdf6] lg:text-5xl">
+                        <span className="mt-2 block text-[#eefdf6]">MD. Arif Hossen</span>
+                        <span className="mt-2 block text-sm font-medium uppercase tracking-[0.18em] text-[#28e98c] lg:text-lg">
+                            MERN Stack Developer
                         </span>
                     </h2>
 
-                    <h2 className="mt-5 text-neutral-300 font-semibold">
+                    <div className="mt-5 text-lg font-medium text-[#dfeff0] lg:text-2xl">
                         <TypeAnimate />
-                    </h2>
+                    </div>
 
-                    <p className="mt-5 text-neutral-100 leading-relaxed">
-                        I’m a software engineer specializing in scalable web apps. Explore
-                        my <span className="text-[#28E98C]">blog</span>,{" "}
-                        <span className="text-[#28E98C]">project portfolio</span>, and{" "}
-                        <span className="text-[#28E98C]">online resume</span>.
+                    <p className="mt-6 max-w-xl text-base leading-8 text-[#b7d9ca] lg:text-lg">
+                        I build modern, scalable web apps with clean code, responsive design,
+                        and smooth user experiences across the full development stack.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
-                        {/* ✅ Updated Button */}
+                    <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
                         <button
                             onClick={handleHireMeClick}
-                            className="inline-block px-6 py-3 text-black font-bold bg-[#28E98C] rounded-lg hover:bg-[#085c33] transition-all"
+                            className="inline-flex items-center justify-center rounded-xl bg-[#28e98c] px-6 py-3 text-base font-semibold text-[#07110d] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#71f5b1]"
                         >
                             Hire me
                         </button>
@@ -50,24 +47,44 @@ const Home4 = () => {
                         <a
                             href=""
                             download="Md Arif resume"
-                            className="inline-block bg-[#1a5e3d] text-[#28E98C] border-none hover:text-neutral-100 py-3 px-6 rounded-md hover:bg-[#28E98C] transition-all"
+                            className="inline-flex items-center justify-center rounded-xl border border-[#28e98c]/40 bg-[#0b1715] px-6 py-3 text-base font-semibold text-[#28e98c] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#28e98c] hover:text-[#07110d]"
                         >
                             Download CV
                         </a>
                     </div>
+
+                    <div className="mt-8 flex items-center justify-center gap-4 lg:justify-start">
+                        {[
+                            { label: 'f', href: 'https://www.facebook.com/mdarifhossen.sagor/' },
+                            { label: 'x', href: 'https://twitter.com/' },
+                            { label: 'g', href: 'https://github.com/arif1313?tab=repositories' },
+                            { label: 'in', href: 'https://www.linkedin.com/in/arifhossen13/' },
+                        ].map((item, idx) => (
+                            <a
+                                key={idx}
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#28e98c]/25 bg-[#0d1715] text-sm font-bold text-[#28e98c] transition-all duration-300 hover:bg-[#28e98c] hover:text-[#07110d]"
+                            >
+                                {item.label}
+                            </a>
+                        ))}
+                    </div>
                 </div>
 
-                {/* Image Section */}
-                <div className="flex-1 flex justify-center items-center mt-10 lg:mt-0 lg:z-30 md:z-20 sm:z-10">
-                    <div className="relative w-64 h-64 md:w-80 md:h-80">
+                <div className="flex flex-1 items-center justify-center lg:justify-end">
+                    <div className="relative h-64 w-64 md:h-80 md:w-80">
+                        <div className="absolute inset-0 rounded-full border border-[#28e98c]/25"></div>
+                        <div className="absolute inset-5 rounded-full border border-[#28e98c]/15"></div>
                         <div className="absolute inset-0 orbit">
-                            <div className="bubble absolute top-1/2 left-0 -translate-y-1/2 w-4 h-4 bg-[#28E98C] rounded-full shadow-[0_0_5px_#28E98C,0_0_10px_#28E98C]"></div>
-                            <div className="bubble absolute top-1/2 right-0 -translate-y-1/2 w-4 h-4 bg-[#28E98C] rounded-full shadow-[0_0_5px_#28E98C,0_0_10px_#28E98C]"></div>
+                            <div className="bubble absolute top-1/2 left-0 -translate-y-1/2 h-4 w-4 rounded-full bg-[#28e98c] shadow-[0_0_18px_rgba(40,233,140,0.9)]"></div>
+                            <div className="bubble absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-[#71f5b1] shadow-[0_0_18px_rgba(113,245,177,0.9)]"></div>
                         </div>
 
-                        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-[#28E98C] z-10 shadow-lg shadow-[#28E98C]/30">
+                        <div className="relative z-10 h-full w-full overflow-hidden rounded-full border-4 border-[#28e98c]/80 bg-slate-900 shadow-[0_25px_60px_rgba(40,233,140,0.18)]">
                             <img
-                                className="w-full h-full object-cover"
+                                className="h-full w-full object-cover"
                                 src={pic}
                                 alt="MD Arif Hossen"
                             />
@@ -80,15 +97,15 @@ const Home4 = () => {
                 <Stat />
             </div>
 
-            <hr className="my-10 border-neutral-700" />
+            <hr className="my-10 border-white/10" />
 
-            <WhatDo
+            {/* <WhatDo
                 headingTitle={"What I Do"}
                 headingDescrip={`I have more than 1 year's experience building websites for clients all over the world. Below is a quick overview of my main technical skills and technologies I use. Want to find out more about my experience? Check out my `}
             >
-                <span className="text-[#28E98C]">online resume</span> and{" "}
-                <span className="text-[#28E98C]">project portfolio</span>.
-            </WhatDo>
+                <span className="text-[#28e98c]">online resume</span> and{" "}
+                <span className="text-[#28e98c]">project portfolio</span>.
+            </WhatDo> */}
 
             <div className="mt-16">
                 <Woks />

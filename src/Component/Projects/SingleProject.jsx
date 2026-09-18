@@ -2,63 +2,65 @@ const SingleProject = ({ project }) => {
     const { name, description, features, technologies_used, github_url, live_demo_url, image } = project;
 
     return (
-        <div className="relative group bg-[#1E1E1E] rounded-2xl overflow-hidden shadow-lg hover:shadow-[#28E98C]/40 border border-gray-800 hover:border-[#28E98C] transition-all duration-500 z-10">
-
-            {/* Image Section */}
-            <div className="overflow-hidden h-52">
+        <div className="group relative z-10 overflow-hidden rounded-[22px] border border-[#28e98c]/10 bg-[#0d1715]  shadow-[0_18px_45px_rgba(0,0,0,0.25)] transition-all duration-500 hover:-translate-y-1 hover:border-[#28e98c]/45 hover:shadow-[0_22px_50px_rgba(40,233,140,0.12)]">
+            <div className="overflow-hidden border-b border-[#28e98c]/10">
                 <img
                     src={image || "https://via.placeholder.com/400x250"}
                     alt={name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
             </div>
+            
+            <div className="space-y-4 p-5">
+                <div className="flex items-center justify-between gap-3">
+                    <h2 className="text-xl font-bold text-white transition-colors group-hover:text-[#28e98c]">
+                        {name}
+                    </h2>
+                    <span className="rounded-full border border-[#28e98c]/30 bg-[#28e98c]/10 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.14em] text-[#28e98c]">
+                        Project
+                    </span>
+                </div>
 
-            {/* Project Content */}
-            <div className="p-6 space-y-4">
-                {/* Title */}
-                <h2 className="text-2xl font-bold text-white group-hover:text-[#28E98C] transition-colors">
-                    {name}
-                </h2>
-                <p className="text-gray-300 text-sm leading-relaxed">{description}</p>
+                <p className="text-sm leading-6 text-[#b7d9ca]">{description}</p>
 
-                {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                     {technologies_used.map((tech, idx) => (
                         <span
                             key={idx}
-                            className="px-3 py-1 text-xs rounded-full border border-[#28E98C]/40 text-[#28E98C] bg-[#28E98C]/10"
+                            className="rounded-full border border-[#28e98c]/20 bg-[#28e98c]/5 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.08em] text-[#28e98c]"
                         >
                             {tech}
                         </span>
                     ))}
                 </div>
 
-                {/* Features */}
                 {features && (
-                    <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+                    <ul className="space-y-2 text-sm text-[#b7d9ca]">
                         {features.map((feature, idx) => (
-                            <li key={idx}>{feature}</li>
+                            <li key={idx} className="flex items-start gap-2">
+                                <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-[#28e98c]" />
+                                <span>{feature}</span>
+                            </li>
                         ))}
                     </ul>
                 )}
 
-                {/* Buttons */}
-                <div className="flex justify-between items-center pt-3">
+                <div className="flex justify-between gap-3 pt-2">
                     <a
                         href={live_demo_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 bg-[#28E98C] text-black text-sm font-semibold rounded-lg shadow hover:bg-[#1f8d60] transition-colors"
+                        className="inline-flex flex-1 items-center justify-center rounded-xl bg-[#28e98c] px-3 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#07110d] transition-all hover:bg-[#71f5b1]"
                     >
-                        🚀 Live Demo
+                        Live Demo
                     </a>
                     <a
                         href={github_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gray-800 text-white text-sm font-semibold rounded-lg hover:bg-gray-700 transition-colors"
+                        className="inline-flex flex-1 items-center justify-center rounded-xl border border-[#28e98c]/20 bg-[#0b1715] px-3 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#28e98c] transition-all hover:border-[#28e98c]/40 hover:bg-[#28e98c]/5"
                     >
-                        💻 GitHub
+                        GitHub
                     </a>
                 </div>
             </div>

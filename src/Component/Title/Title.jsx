@@ -3,12 +3,10 @@
 const Title = ({ headingTitle }) => {
     return (
         <div>
-            <div className="flex gap-2">
-                <div className="bg-[#28E98C]  w-1">
-
-                </div>
+            <div className="flex items-center gap-3 max-w-[1400px] mx-auto">
+                <div className="h-7 w-1 rounded-full bg-[#28e98c]" />
                 <div>
-                    <h1 className="text-5xl font-bold text-neutral-100">{headingTitle}</h1>
+                    <h1 className="text-3xl font-bold text-white md:text-4xl">{headingTitle}</h1>
                 </div>
             </div>
         </div>

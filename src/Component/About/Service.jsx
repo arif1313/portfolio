@@ -89,9 +89,9 @@ const Service = () => {
     };
 
     return (
-        <div className="min-h-screen bg-[#292929] p-10" >
+        <div className="min-h-screen bg-[#000000] " >
             {/* Heading */}
-            <div className="text-center md:text-left mb-12">
+            <div className="text-center md:text-left mb-12 max-w-[1400px] mx-auto py-10 ">
                 <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide text-white">
                     My <span className="text-[#28E98C]">Services</span>
                 </h1>
@@ -101,7 +101,7 @@ const Service = () => {
             </div>
 
             {/* Services grid */}
-            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 sm:z-0">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 sm:z-0 max-w-[1400px] mx-auto ">
                 {services.map((service, index) => (
                     <motion.div
                         key={index}

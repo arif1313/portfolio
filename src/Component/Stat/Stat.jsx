@@ -1,23 +1,23 @@
 const Stat = () => {
     return (
-        <div className="py-10 px-4 md:px-10">
-            <div className="bg-[rgb(41,41,41)] shadow-lg rounded-xl flex  justify-around items-center gap-6 sm:gap-10 py-8">
-                <div className="flex flex-col items-center flex-1 text-center">
-                    <div className="text-[#28E98C] text-3xl sm:text-4xl md:text-5xl font-bold">1K</div>
-                    <div className="text-neutral-100 text-sm sm:text-base md:text-lg mt-2">Clients Worldwide</div>
+        <div className="py-10 px-4 md:px-10 max-w-[1400px] mx-auto">
+            <div className="flex items-center justify-around gap-4 rounded-[20px] border border-[#28e98c]/10 bg-[#0d1715] py-8 shadow-[0_16px_30px_rgba(0,0,0,0.22)]">
+                <div className="flex flex-1 flex-col items-center text-center">
+                    <div className="text-3xl font-bold text-[#28e98c] sm:text-4xl md:text-5xl">1K+</div>
+                    <div className="mt-2 text-sm text-[#eefdf6] sm:text-base md:text-lg">Lines of Code</div>
                 </div>
-                <div className="flex flex-col items-center flex-1 text-center">
-                    <div className="text-[#28E98C] text-3xl sm:text-4xl md:text-5xl font-bold">40+</div>
-                    <div className="text-neutral-100 text-sm sm:text-base md:text-lg mt-2">Projects Completed</div>
+                <div className="flex flex-1 flex-col items-center text-center">
+                    <div className="text-3xl font-bold text-[#28e98c] sm:text-4xl md:text-5xl">40+</div>
+                    <div className="mt-2 text-sm text-[#eefdf6] sm:text-base md:text-lg">Projects Completed</div>
                 </div>
-                <div className="flex flex-col items-center flex-1 text-center">
-                    <div className="text-[#28E98C] text-3xl sm:text-4xl md:text-5xl font-bold">1</div>
-                    <div className="text-neutral-100 text-sm sm:text-base md:text-lg mt-2">Years of Experience</div>
+                <div className="flex flex-1 flex-col items-center text-center">
+                    <div className="text-3xl font-bold text-[#28e98c] sm:text-4xl md:text-5xl">100%</div>
+                    <div className="mt-2 text-sm text-[#eefdf6] sm:text-base md:text-lg">Client Satisfaction</div>
                 </div>
-
             </div>
         </div>
     );
 };
+
 
 export default Stat;

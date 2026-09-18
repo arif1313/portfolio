@@ -18,8 +18,11 @@ const Projects = () => {
     const codingProjects = projects.filter(p => p.category === "coding");
 
     return (
-        <section className="p-8 lg:p-10 bg-[#292929] min-h-screen ">
-            {/* Heading */}
+   <div className=" py-10 bg-[#07110d]">
+  <section className="py-8 lg:py-10 max-w-[1400px] mx-auto min-h-screen ">
+
+
+               {/* Heading */}
             <div className=" mb-12">
                 <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide text-white">
                     My <span className="text-[#28E98C]">Projects</span>
@@ -30,7 +33,7 @@ const Projects = () => {
             </div>
 
             {/* Intro Paragraph */}
-            <div className="max-w-4xl mx-auto  mb-20">
+            <div className="   mb-20">
                 <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
                     My projects reflect my journey as a developer, showcasing a blend of{" "}
                     <span className="text-[#28E98C] font-medium">creativity</span>,{" "}
@@ -49,7 +52,7 @@ const Projects = () => {
                 </p>
             </div>
 
-            <div className="container mx-auto space-y-24">
+            <div className="w-full space-y-24">
                 {/* Frontend Projects */} <div> <div className="text-center mb-10"> <Title headingTitle="🎨 Frontend Web Projects" /> <p className="text-gray-400 mt-2"> Interactive and modern UI/UX web apps built with React, Tailwind, and more. </p> </div> <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"> {frontendProjects.map((project, idx) => (<SingleProject project={project} key={idx} />))} </div> </div>
 
                 {/* Backend Projects */}
@@ -97,7 +100,10 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+   
         </section>
+   </div>
+
     );
 };
 
