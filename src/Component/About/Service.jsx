@@ -12,8 +12,9 @@ const Service = () => {
     const services = [
         {
             title: "Web Development",
-            icon: <CgWebsite className="text-7xl text-[#28E98C]" />,
-            shortDesc: "MERN Stack Website Development",
+            icon: <CgWebsite className="text-3xl text-[#28E98C]" />,
+            label: "Development",
+            shortDesc: "Modern, responsive websites built with the MERN stack and clean, user-focused interfaces.",
             fullDesc: (
                 <>
                     I build modern and responsive websites using <b>React, Tailwind CSS, HTML, CSS, JavaScript, Redux</b>.
@@ -23,8 +24,9 @@ const Service = () => {
         },
         {
             title: "App Development",
-            icon: <SiBmcsoftware className="text-7xl text-[#28E98C]" />,
-            shortDesc: "Full Stack Application Development",
+            icon: <SiBmcsoftware className="text-3xl text-[#28E98C]" />,
+            label: "Development",
+            shortDesc: "Scalable full-stack applications with reliable APIs, secure data flow, and smooth integrations.",
             fullDesc: (
                 <>
                     Experienced in building scalable applications using <b>Node.js, Express, MongoDB, TypeScript, Firebase, Multer, Docker</b>.
@@ -34,8 +36,9 @@ const Service = () => {
         },
         {
             title: "UI / UX Design",
-            icon: <VscTerminalTmux className="text-7xl text-[#28E98C]" />,
-            shortDesc: "Responsive & User-friendly Design",
+            icon: <VscTerminalTmux className="text-3xl text-[#28E98C]" />,
+            label: "Design",
+            shortDesc: "Simple and engaging interfaces designed to feel clear, accessible, and easy to use.",
             fullDesc: (
                 <>
                     Skilled in <b>Figma, Adobe XD, Sketch, and Design Thinking</b>.
@@ -45,8 +48,9 @@ const Service = () => {
         },
         {
             title: "Frontend Development",
-            icon: <FaCode className="text-7xl text-[#28E98C]" />,
-            shortDesc: "Modern, responsive & interactive UI",
+            icon: <FaCode className="text-3xl text-[#28E98C]" />,
+            label: "Frontend",
+            shortDesc: "Fast, responsive frontends with polished interactions and consistent visual structure.",
             fullDesc: (
                 <>
                     Focused on building pixel-perfect frontends with <b>React, Tailwind, HTML, CSS, JavaScript, Redux</b>.
@@ -56,8 +60,9 @@ const Service = () => {
         },
         {
             title: "Backend Development",
-            icon: <FaServer className="text-7xl text-[#28E98C]" />,
-            shortDesc: "APIs, Databases & Secure Systems",
+            icon: <FaServer className="text-3xl text-[#28E98C]" />,
+            label: "Backend",
+            shortDesc: "Robust backend systems with maintainable APIs, databases, authentication, and secure logic.",
             fullDesc: (
                 <>
                     Expertise in <b>Node.js, Express, MongoDB, TypeScript, Firebase</b>.
@@ -67,8 +72,9 @@ const Service = () => {
         },
         {
             title: "Programming Languages",
-            icon: <DiPython className="text-7xl text-[#28E98C]" />,
-            shortDesc: "C, C++, Python, Java",
+            icon: <DiPython className="text-3xl text-[#28E98C]" />,
+            label: "Engineering",
+            shortDesc: "Strong programming fundamentals used for problem solving, algorithms, and practical development.",
             fullDesc: (
                 <>
                     Problem-solving and algorithm development using <b>C, C++, Python, Java</b>.
@@ -89,32 +95,43 @@ const Service = () => {
     };
 
     return (
-        <div className="min-h-screen bg-[#000000] " >
-            {/* Heading */}
-            <div className="text-center md:text-left mb-12 max-w-[1400px] mx-auto py-10 ">
-                <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 tracking-wide text-white">
-                    My <span className="text-[#28E98C]">Services</span>
-                </h1>
-                <div className="flex justify-center md:justify-start">
-                    <div className="w-24 h-1 bg-[#28E98C] rounded-full animate-pulse"></div>
+        <div className="min-h-screen overflow-hidden bg-[#07110d]">
+            <div className="mx-auto w-full max-w-[1400px] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+                {/* Heading */}
+                <div className="mb-10 text-center md:text-left lg:mb-12">
+                    <p className="mb-2 text-xs font-medium uppercase tracking-[0.25em] text-[#28e98c]">What I offer</p>
+                    <h1 className="mb-4 text-3xl font-extrabold tracking-wide text-white lg:text-4xl">
+                        My <span className="text-[#28E98C]">Services</span>
+                    </h1>
+                    <div className="flex justify-center md:justify-start">
+                        <div className="h-px w-24 bg-[#28E98C]" />
+                    </div>
                 </div>
-            </div>
 
-            {/* Services grid */}
-            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 sm:z-0 max-w-[1400px] mx-auto ">
-                {services.map((service, index) => (
-                    <motion.div
-                        key={index}
-                        className="card bg-[#0f0f0f] shadow-lg p-6 rounded-2xl cursor-pointer"
-                        whileHover={{ scale: 1.05, boxShadow: "0 0 20px #28E98C" }}
-                        initial="hidden"
-                        animate="visible"
-                        variants={cardVariants}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                    >
-                        <div className="flex flex-col items-center text-center gap-4">
-                            {service.icon}
-                            <h2 className="card-title text-xl text-white">{service.title}</h2>
+                {/* Services grid */}
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {services.map((service, index) => (
+                        <motion.div
+                            key={index}
+                            className="group relative min-h-[290px] overflow-hidden rounded-[22px] border border-[rgba(40,233,140,0.12)] bg-[linear-gradient(180deg,#101b18_0%,#060d0b_100%)] p-5 shadow-[0_18px_45px_rgba(0,0,0,0.28)] transition-shadow duration-300 hover:border-[rgba(40,233,140,0.3)] hover:shadow-[0_18px_38px_rgba(40,233,140,0.07)]"
+                            whileHover={{ y: -4 }}
+                            initial="hidden"
+                            animate="visible"
+                            variants={cardVariants}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                        >
+                        <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#28e98c]/60 to-transparent" />
+                        <div className="flex flex-col items-start gap-4 text-left">
+                            <div className="flex w-full items-center justify-between gap-4">
+                                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[rgba(40,233,140,0.2)] bg-[#0d1715]">
+                                    {service.icon}
+                                </div>
+                                <span className="rounded-full bg-[#28e98c]/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#28e98c]">
+                                    {service.label}
+                                </span>
+                            </div>
+
+                            <h2 className="text-lg font-bold leading-snug text-white sm:text-xl">{service.title}</h2>
 
                             {/* Animated Expand/Collapse */}
                             <AnimatePresence initial={false}>
@@ -126,14 +143,14 @@ const Service = () => {
                                         animate="expanded"
                                         exit="collapsed"
                                         transition={{ duration: 0.5 }}
-                                        className="text-neutral-300 text-sm"
+                                        className="text-sm leading-7 text-[#b7d9ca]"
                                     >
                                         {service.fullDesc}
                                     </motion.div>
                                 ) : (
                                     <motion.p
                                         key="short"
-                                        className="text-neutral-300 text-sm"
+                                        className="text-sm leading-7 text-[#b7d9ca]"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         transition={{ duration: 0.3 }}
@@ -147,14 +164,14 @@ const Service = () => {
                                 onClick={() =>
                                     setOpenIndex(openIndex === index ? null : index)
                                 }
-                                className="btn btn-sm mt-2 bg-[#28E98C] bg-opacity-80 text-black font-semibold 
-                hover:bg-transparent hover:text-[#28E98C] border border-[#28E98C] flex items-center gap-2 transition-all duration-300"
+                                className="mt-2 inline-flex items-center gap-2 rounded-full border border-[rgba(40,233,140,0.28)] bg-[#28e98c]/10 px-3.5 py-2 text-xs font-semibold text-[#28e98c] transition-colors duration-300 hover:bg-[#28e98c] hover:text-[#07110d]"
                             >
                                 {openIndex === index ? "Show less" : "Learn more"} <FaLongArrowAltRight />
                             </button>
                         </div>
-                    </motion.div>
-                ))}
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </div>
     );

@@ -140,7 +140,7 @@ const JourneyCard = ({ item, side }) => {
     return (
         <div
             ref={ref}
-            className={`group relative flex items-center gap-4 overflow-hidden rounded-[22px] border border-[#28e98c]/12 bg-[linear-gradient(180deg,#101b18_0%,#060d0b_100%)] p-5 shadow-[0_18px_45px_rgba(0,0,0,0.35)] transition-all duration-700 ease-out hover:-translate-y-1 hover:border-[#28e98c]/50 hover:shadow-[0_20px_50px_rgba(40,233,140,0.12)]
+            className={`group relative flex items-center gap-4 overflow-hidden rounded-[22px] border border-[rgba(40,233,140,0.15)] bg-[linear-gradient(180deg,#101b18_0%,#060d0b_100%)] p-5 shadow-[0_18px_45px_rgba(0,0,0,0.35)] transition-all duration-700 ease-out hover:-translate-y-1 hover:border-[rgba(40,233,140,0.35)] hover:shadow-[0_20px_50px_rgba(40,233,140,0.12)]
             ${side === 'right' ? 'md:flex-row-reverse md:text-right' : ''}
             ${isInView ? 'translate-x-0 translate-y-0 opacity-100' : `translate-y-6 opacity-0 ${hiddenTranslate}`}`}
         >
@@ -209,7 +209,7 @@ const JourneyTimeline = () => (
 
 const About = () => {
     return (
-        <div className='overflow-hidden bg-[#07110d]'>
+        <div className='overflow-hidden bg-[#010202]'>
             <div className="min-h-screen max-w-[1400px] mx-auto text-neutral-100 px-4 py-10 sm:px-6 lg:px-8" id="about">
                 <div className="flex flex-col-reverse items-center gap-10 md:flex-row md:items-start md:justify-between md:gap-6">
                     <div className="w-full md:max-w-xl">
@@ -228,7 +228,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className="relative h-[220px] w-[260px] shrink-0 overflow-hidden rounded-[28px] border border-[#28e98c]/20 bg-[#0d1715] shadow-[0_25px_60px_rgba(40,233,140,0.1)] sm:h-[260px] sm:w-[320px]">
+                    <div className="relative h-[420px] w-[460px] shrink-0 overflow-hidden rounded-[28px] bg-[#0d1715]  sm:h-[260px] sm:w-[320px]">
                         <img src={gif} alt="Education" className="h-full w-full object-cover opacity-90" />
                     </div>
                 </div>
