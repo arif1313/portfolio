@@ -60,10 +60,9 @@ const Projects = () => {
                         <div className="h-1 w-32 animate-pulse rounded-full bg-[#28E98C]"></div>
                     </div>
                 </div>
-
                 {/* Intro Paragraph */}
                 <div className="mb-16">
-                    <p className="text-base leading-relaxed text-gray-300 lg:text-lg text-center w-3/4 mx-auto text-wrap text-justify-center">
+                    <p className=" text-sm leading-7 text-[#b7d9ca] sm:text-base  text-wrap text-justify-center">
                         My projects reflect my journey as a developer, showcasing a blend of{" "}
                         <span className="font-medium text-[#28E98C]">creativity</span>,{" "}
                         <span className="font-medium text-[#28E98C]">problem-solving</span>, and{" "}
