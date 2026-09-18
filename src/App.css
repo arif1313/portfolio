@@ -76,6 +76,7 @@ body {
   max-width: var(--content-max-width);
   margin-inline: auto;
   overflow-x: hidden;
+  background: #07110d;
 }
 
 ::-webkit-scrollbar {

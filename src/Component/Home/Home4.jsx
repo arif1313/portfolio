@@ -14,7 +14,7 @@ const Home4 = () => {
     };
 
     return (
-        <div className=" w-full min-w-0 overflow-hidden  bg-[#07110d]/95 px-0 py-8 shadow-[0_20px_70px_rgba(0,0,0,0.45)] backdrop-blur-sm md:px-8 lg:px-10 lg:py-10">
+        <div className="w-full min-w-0 overflow-hidden bg-[#07110d] px-4 py-8 md:px-8 lg:px-10 lg:py-10">
             <div className=" max-w-[1400px] mx-auto flex flex-col items-center justify-between gap-10 lg:flex-row">
             <div className="min-w-0 max-w-full flex-1 text-center lg:text-left">
                     <p className="mb-4 text-sm font-medium uppercase tracking-[0.32em] text-[#28e98c]">
@@ -97,17 +97,7 @@ const Home4 = () => {
                 <Stat />
             </div>
 
-            <hr className="my-10 border-white/10" />
-
-            {/* <WhatDo
-                headingTitle={"What I Do"}
-                headingDescrip={`I have more than 1 year's experience building websites for clients all over the world. Below is a quick overview of my main technical skills and technologies I use. Want to find out more about my experience? Check out my `}
-            >
-                <span className="text-[#28e98c]">online resume</span> and{" "}
-                <span className="text-[#28e98c]">project portfolio</span>.
-            </WhatDo> */}
-
-            <div className="mt-16">
+            <div className="mt-8">
                 <Woks />
             </div>
         </div>
