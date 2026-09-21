@@ -4,7 +4,7 @@ import "./roted.css";
 import WhatDo from "../WhatDo/WhatDo";
 import Stat from "../Stat/Stat";
 import Woks from "../WhatDo/Woks";
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Home4 = () => {
     const handleHireMeClick = () => {
         const contactSection = document.getElementById("contact");
