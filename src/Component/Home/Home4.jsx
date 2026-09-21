@@ -4,7 +4,7 @@ import "./roted.css";
 import WhatDo from "../WhatDo/WhatDo";
 import Stat from "../Stat/Stat";
 import Woks from "../WhatDo/Woks";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 const Home4 = () => {
     const handleHireMeClick = () => {
         const contactSection = document.getElementById("contact");
@@ -14,6 +14,8 @@ const Home4 = () => {
     };
 
     return (
+
+   
         <div className="w-full min-w-0 overflow-hidden bg-[#07110d] px-4 py-8 md:px-8 lg:px-10 lg:py-10">
             <div className=" max-w-[1400px] mx-auto flex flex-col items-center justify-between gap-10 lg:flex-row">
             <div className="min-w-0 max-w-full flex-1 text-center lg:text-left">

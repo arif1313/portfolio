@@ -5,10 +5,22 @@ import Home4 from "./Component/Home/Home4";
 import Sidebar2 from "./Component/Layout/Sidebar2";
 
 import Projects from "./Component/Projects/Projects";
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const App = () => {
   return (
+
+      <HelmetProvider>
+      <div>
+        <Helmet>
+          <title>MD Arif | React Developer Portfolio</title>
+          <meta name="description" content="Hi, I am MD Arif. Welcome to my web development portfolio." />
+        </Helmet>
+
+      </div>
+
+
+
     <div className="portfolio-shell">
       <Sidebar2 />
 
@@ -34,6 +46,7 @@ const App = () => {
         </section>
       </div>
     </div>
+        </HelmetProvider>
   );
 };
 
